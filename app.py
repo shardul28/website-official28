@@ -3,7 +3,6 @@ import flask
 import os
 from flask import send_from_directory
 from flask import Flask ,render_template,request
-
 from flask import Flask ,render_template,request
 import numpy as np
 import pickle
@@ -17,10 +16,6 @@ ps = PorterStemmer()
 from flask import Flask ,render_template
 app = flask.Flask(__name__)
 
-@app.route('/favicon.ico')
-def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static'),
-                               'favicon.ico', mimetype='image/favicon.png')
 
 @app.route('/')
 @app.route('/home')
@@ -46,7 +41,7 @@ def spamhtml():
 @app.route('/index')
 def index():
     return index.html
-
+'''
 
 model=pickle.load(open('model.pkl','rb'))
 tfidf = pickle.load(open('vectorizer.pkl','rb'))
@@ -88,8 +83,7 @@ def predict():
         else:
             return render_template('spamclassifier.html',result2="NOT SPAM")
 
-
+'''
 if __name__ == "__main__":
-    #app.secret_key = 'ItIsASecret'
-    #app.debug = True
+
     app.run()
