@@ -28,10 +28,6 @@ def catsordogs():
     #return "Hello World"
     return render_template('catsordogs.html')
 
-@app.route('/facerecognition',methods=["POST", "GET"])
-def facerecognition():
-    #return "Hello World"
-    return render_template('facerecognition.html')
 
 @app.route('/spamhtml',methods=["POST", "GET"])
 def spamhtml():
