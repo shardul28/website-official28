@@ -11,7 +11,7 @@ from nltk.corpus import stopwords
 import nltk
 from nltk.stem.porter import PorterStemmer
 from flask import Flask, render_template, Response
-ps = PorterStemmer()
+#ps = PorterStemmer()
 ################################################################
 from flask import Flask ,render_template
 app = flask.Flask(__name__)
@@ -27,7 +27,6 @@ def home():
 def catsordogs():
     #return "Hello World"
     return render_template('catsordogs.html')
-
 
 @app.route('/spamhtml',methods=["POST", "GET"])
 def spamhtml():
