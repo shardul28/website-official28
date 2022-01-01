@@ -22,7 +22,7 @@ app = flask.Flask(__name__)
 def home():
     #return "Hello World"
     return render_template('index.html')
-
+'''
 @app.route('/catsordogs',methods=["POST", "GET"])
 def catsordogs():
     #return "Hello World"
@@ -35,7 +35,7 @@ def spamhtml():
 
 @app.route('/index')
 def index():
-    return index.html
+    return index.html'''
 '''
 
 model=pickle.load(open('model.pkl','rb'))
