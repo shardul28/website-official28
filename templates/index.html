@@ -57,6 +57,16 @@ body, html {
     min-height: 400px;
   }
 }
+li {
+  font-size: 20px;
+}
+p {
+  font-size: 20px;
+}
+
+.aligncenter {
+    text-align: center;
+}
 </style>
 <body>
 
@@ -113,28 +123,28 @@ body, html {
       </b></p><br></p>
     <!--  <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333"> -->
     </div>
-
+    <hr>
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
       <p></p>
     </div>
   </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p align="center">I'm really good at:</p>
   <p class="w3-wide"><i class="fa fa-laptop"></i>Python</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
   </div>
   <p class="w3-wide"><i class="fa fa-laptop"></i>C/C#</p>
   <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">85%</div>
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
   </div>
   <p class="w3-wide"><i class="fa fa-laptop"></i>Java</p>
   <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">86%</div>
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:86%">86%</div>
   </div>
   <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
   <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">85%</div>
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
   </div>
   <p class="w3-wide"><i class="fa fa-laptop"></i>Natural Language Processing</p>
   <div class="w3-light-grey">
@@ -144,7 +154,12 @@ body, html {
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">65%</div>
   </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Databases</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
+  </div>
 </div>
+
 <!--
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-quarter w3-section">
@@ -161,33 +176,60 @@ body, html {
 </div>
 -->
 <!-- Container (Portfolio Section) -->
+<style>
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  </style>
+  <style>
+    hr {
+      opacity: 100%;
+      display: block;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: inset;
+      border-width: 2px;
+      border: 1px solid rgb(0, 0, 0);
+    }
+    </style>
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <hr><br><br>
   <h3 class="w3-center"><b>MY WORK</b></h3>
   <p class="w3-center"><em>Here are some of my latest projects.<br> </em></p><br>
-
+<style>ol {counter-reset: item;}
+  ol li {display: block;}
+  ol li:before {content: counter(item) ". "; counter-increment: item; font-weight: bold;}</style>
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <ul style="list-style-type:circle;"><b></b>
+  <ol type="1"><b></b>
     <li><b>Created a racing game using unity with online authentication and online scoreboard(firebase)</b>
       <a href="https://drive.google.com/drive/folders/1sFyCcXNztZjOKk3Pp_NWX5epoivFLLxU?usp=sharing">Drive Link</a><br>
+      <img src="static\images\game.jpg" alt="ST Racing"  width="600" height="900" style="vertical-align:middle" >
     </li><br>
+    <br>
     <li><b>Created a college website using java servlets and SQL with authentication and authorization</b>
       <a href="https://drive.google.com/drive/folders/1XH4wfhAhouZcOLC7jkmM5IfX-YIl-rPQ">Drive Link</a></li><br>
+      <img src="static\images\stuni.jpg" alt="College Website"  width="800" height="450" style="vertical-align:middle">
     </li>
+    <br><br>
+    <li><b>Created an attendance system Using face recognition on live video from webcam</b>
+      <a href="https://drive.google.com/drive/folders/1BSrbP7qdPXOZTc87VYdUVhhBHF6-0xgr?usp=sharing">Drive Link</a>
+      <br>  <img src="static\images\facerecog.png" alt="face recognition"  width="800" height="450" style="vertical-align:middle">
+    </li><br>
     <li><b>Wrote a case study on Fake news detection using Machine learning algorithms.</b>
-      <a href="https://drive.google.com/file/d/19dhR8A77QRyZAar46ExaMWVVm9kMIcEc/view?usp=sharing">Drive Link</a></li>
+   <a href="https://drive.google.com/file/d/19dhR8A77QRyZAar46ExaMWVVm9kMIcEc/view?usp=sharing">Drive Link</a>
+    </li>
 
-  </ul>
+  </ol>
   <br>
-
+  <br><br>
+  <hr>
   <h3 class="w3-center"><b>LIVE Projects</b></h3>
   <br><br>
-  <a href="/catsordogs"></i>CAT or DOG</a>
-
   <a href="/spamhtml"></i>SPAM CLASSIFIER</a>
-  <br><br>
-  <a href="/catsordogs"></i>CAT or DOG</a>
-  <br><br>
-  <a href="/facerecognition"></i>KEANU</a>
   <br><br>
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
@@ -301,7 +343,7 @@ body, html {
   </div>
   <!--<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>-->
 </footer>
- 
+
 <script>
 // Modal Image Gallery
 function onClick(element) {
